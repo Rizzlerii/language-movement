@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Movement Tribute</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            padding: 12px 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Language Movement Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Thoughts on Language Movement:</label>
+                <input type="text"id="message" name="message" rows="4" placeholder="KindLy Share Your Thoughts on this.." required>
+            </div>
+
+            <div class="form-group">
+                <label for="importance">Why is the Language Movement important to you?</label>
+                <input type="text" id="importance" name="importance" placeholder="What might be the Reason?" required>
+            </div>
+
+            <div class="form-footer">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
